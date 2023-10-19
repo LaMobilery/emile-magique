@@ -6,7 +6,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import dates from "../utils/dates.json";
 
-
 const dataJson = dates;
 
 export default function Home() {
@@ -33,7 +32,8 @@ export default function Home() {
               date !== null && setStartDate(date);
             }}
           />
-          <p>{text}</p>
+
+          {text && <p dangerouslySetInnerHTML={{ __html: text }} />}
         </div>
       </main>
     </>
