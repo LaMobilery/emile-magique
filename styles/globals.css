@@ -5,74 +5,6 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
   --main-color: #FFEBCD;
-
-  --foreground-rgb: var(--main-color);
-  --background-start-rgb: var(--main-color);
-  --background-end-rgb: var(--main-color);
-
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    var(--main-color) 0deg,
-    var(--main-color) 55deg,
-    var(--main-color) 120deg,
-    var(--main-color) 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-          var(--main-color),
-          var(--main-color)
-  );
-
-  --tile-start-rgb: var(--main-color);
-  --tile-end-rgb: var(--main-color);
-  --tile-border: conic-gradient(
-          var(--main-color)
-          var(--main-color)
-          var(--main-color)
-          var(--main-color)
-          var(--main-color)
-          var(--main-color)
-          var(--main-color)
-  );
-
-  --callout-rgb: var(--main-color);
-  --callout-border-rgb: var(--main-color);
-  --card-rgb: var(--main-color);
-  --card-border-rgb: var(--main-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: var(--main-color);
-    --background-start-rgb: var(--main-color);
-    --background-end-rgb: var(--main-color);
-
-    --primary-glow: radial-gradient(var(--main-color), var(--main-color));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      var(--main-color),
-      var(--main-color),
-      var(--main-color),
-    );
-
-    --tile-start-rgb: var(--main-color);
-    --tile-end-rgb: var(--main-color);
-    --tile-border: conic-gradient(
-            var(--main-color),
-            var(--main-color),
-            var(--main-color),
-            var(--main-color),
-            var(--main-color),
-            var(--main-color),
-            var(--main-color),
-    );
-
-    --callout-rgb: var(--main-color);
-    --callout-border-rgb: var(--main-color);
-    --card-rgb: var(--main-color);
-    --card-border-rgb: var(--main-color);
-  }
 }
 
 * {
@@ -87,15 +19,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 a {
   color: inherit;
