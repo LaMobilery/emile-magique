@@ -35,6 +35,7 @@ export default function Home() {
         />
         <div className={styles.center}>
           <DatePicker
+            dateFormat="dd/MM/yyyy"
             selected={startDate}
             onChange={date => {
               date !== null && setStartDate(date);
