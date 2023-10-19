@@ -1,6 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 
-module.exports = nextConfig
+const isProd = process.env.NODE_ENV === "production";
+
+const nextConfig = {
+  output: "export",
+  assetPrefix: isProd ? "https://lamobilery.github.io/emile-magique/" : undefined,
+  images: isProd
+      ? {
+        loader: "custom",
+        loaderFile: "./app/loader.ts",
+      }
+      : undefined,
+};
+
+module.exports = nextConfig;
