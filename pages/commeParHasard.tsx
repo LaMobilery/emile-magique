@@ -12,7 +12,7 @@ const CommeParhasard = () => {
     <div style={{ width: "100vw", height: "100vh", overflow: "scroll" }}>
       {display && (
         <div style={{ position: "relative", width: 7283, height: 2190 }}>
-          <Image src="/tienstienstiens-sijmattendais.png" alt="test" fill unoptimized />
+          <Image src="/tienstienstiens-sijmattendais.png" alt="test" fill />
           <div
             style={{
               position: "absolute",
@@ -26,7 +26,7 @@ const CommeParhasard = () => {
           ></div>
         </div>
       )}
-      {!display && <Image src="/test.png" alt="test" width={720} height={720} unoptimized />}
+      {!display && <Image src="/test.png" alt="test" width={720} height={720} />}
     </div>
   );
 };
