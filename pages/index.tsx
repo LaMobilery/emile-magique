@@ -4,10 +4,8 @@ import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import Link from "next/link";
 import dates from "../utils/dates.json";
 
-const inter = Inter({ subsets: ["latin"] });
 
 const dataJson = dates;
 
@@ -35,7 +33,6 @@ export default function Home() {
               date !== null && setStartDate(date);
             }}
           />
-
           <p>{text}</p>
         </div>
       </main>
