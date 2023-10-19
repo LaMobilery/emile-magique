@@ -4,8 +4,7 @@ import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import dates from "../utils/dates.json";
-import Image from 'next/image'
-import Couv from '../public/image.png'
+import Image from "next/image";
 
 const dataJson = dates;
 
@@ -27,7 +26,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          <Image alt={'pourquoi tu regarde ici ?'} style={{position: 'absolute', left: 150, top: 150}} src={Couv.src} width={271} height={403} />
+        <Image
+          alt={"pourquoi tu regarde ici ?"}
+          style={{ position: "absolute", left: 150, top: 150 }}
+          src="/image.png"
+          width={271}
+          height={403}
+        />
         <div className={styles.center}>
           <DatePicker
             selected={startDate}
