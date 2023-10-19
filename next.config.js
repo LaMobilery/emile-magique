@@ -8,7 +8,7 @@ const nextConfig = {
   images: isProd
     ? {
         loader: "custom",
-        loaderFile: "./app/loader.ts",
+        loaderFile: "./utils/loader.ts",
       }
     : undefined,
 };
