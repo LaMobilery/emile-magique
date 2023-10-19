@@ -36,7 +36,7 @@ export default function Home() {
             }}
           />
 
-          <p>{text}</p>
+          {text && <p dangerouslySetInnerHTML={{ __html: text }} />}
         </div>
       </main>
     </>

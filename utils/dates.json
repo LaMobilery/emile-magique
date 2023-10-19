@@ -1,7 +1,7 @@
 [
   {
     "date": "01/01/1801",
-    "text": "Un nouveau siècle commence."
+    "text": "<a href='https://fr.wikipedia.org/wiki/Le_Tour_du_monde_en_quatre-vingts_jours'>Un nouveau siècle commence.</a>"
   },
   {
     "date": "02/02/1802",
@@ -17,7 +17,7 @@
   },
   {
     "date": "05/05/1805",
-    "text": "L'histoire continue de s'écrire."
+    "text": "L'histoire <a href='https://beq.ebooksgratuits.com/vents/Verne-tour-monde.pdf'>continue de s'écrire.</a>"
   },
   {
     "date": "06/06/1806",
@@ -29,7 +29,7 @@
   },
   {
     "date": "08/08/1808",
-    "text": "Une époque bien différente de la nôtre."
+    "text": "<a href='https://www.youtube.com/watch?v=ouxJM4Zd5a4&pp=ygUTYmJjIHRyYWlsZXIgODAgZGF5cw%3D%3D'>Une époque bien différente de la nôtre.</a>"
   },
   {
     "date": "09/09/1809",
@@ -37,6 +37,6 @@
   },
   {
     "date": "10/10/2021",
-    "text": "Une date en 2021, une année marquante."
+    "text": "Une date en <a href='/commeParHasard'>2021</a>, une année marquante."
   }
 ]
