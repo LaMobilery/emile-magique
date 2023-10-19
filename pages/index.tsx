@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          <Image style={{position: 'absolute', left: 150, top: 150}} src={Couv.src} priority={true} unoptimized={true} width={271} height={403} />
+          <Image style={{position: 'absolute', left: 150, top: 150}} src={Couv.src} width={271} height={403} />
         <div className={styles.center}>
           <DatePicker
             selected={startDate}
