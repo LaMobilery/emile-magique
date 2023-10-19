@@ -6,11 +6,12 @@ const nextConfig = {
   output: "export",
   assetPrefix: isProd ? "https://lamobilery.github.io/emile-magique/" : undefined,
   images: isProd
-      ? {
+    ? {
         loader: "custom",
-        loaderFile: "./app/loader.ts",
+        loaderFile: "./utils/loader.ts",
       }
-      : undefined,
+    : undefined,
+  unoptimized: true,
 };
 
 module.exports = nextConfig;
