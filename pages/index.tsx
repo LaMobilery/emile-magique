@@ -4,6 +4,7 @@ import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import dates from "../utils/dates.json";
+import Image from "next/image";
 
 const dataJson = dates;
 
@@ -34,6 +35,9 @@ export default function Home() {
           />
 
           {text && <p dangerouslySetInnerHTML={{ __html: text }} />}
+          <Image src="/title.svg" alt="title" width={654} height={69} priority />
+          <Image src="/text.svg" alt="text" width={650} height={2412} priority />
+          <Image src="/footer.svg" alt="footer" width={638} height={24} priority />
         </div>
       </main>
     </>
