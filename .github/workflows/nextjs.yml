@@ -1,0 +1,35 @@
+name: Deploy to Github Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js app
+        run: npm run build
+
+      - name: Deploy Next.js app
+        if: github.ref_name == 'main'
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: out/
+          keep_history: true
+          jekyll: false # Solve website 404
+        env:
+          GITHUB_TOKEN: ${{ secrets.FRONT_GITHUB_TOKEN }}
