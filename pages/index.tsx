@@ -42,9 +42,9 @@ export default function Home() {
           />
 
           {text && <p dangerouslySetInnerHTML={{ __html: text }} />}
-          <Image src="/title.svg" alt="title" width={654} height={69} priority />
-          <Image src="/text.svg" alt="text" width={650} height={2412} priority />
-          <Image src="/footer.svg" alt="footer" width={638} height={24} priority />
+          <Image src="/title.svg" alt="title" width={654} height={69} priority style={{ marginTop: "2rem" }} />
+          <Image src="/text.svg" alt="text" width={650} height={2412} priority style={{ marginTop: "2rem" }} />
+          <Image src="/footer.svg" alt="footer" width={650} height={44} priority style={{ marginTop: "4rem" }} />
         </div>
       </main>
     </>
