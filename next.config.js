@@ -10,7 +10,8 @@ const nextConfig = {
         loader: "custom",
         loaderFile: "./utils/loader.ts",
       }
-      : undefined,
+    : undefined,
+  unoptimized: true,
 };
 
 module.exports = nextConfig;
