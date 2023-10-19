@@ -4,7 +4,8 @@ import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import dates from "../utils/dates.json";
-import Image from "next/image";
+import Image from 'next/image'
+import Couv from '../public/image.png'
 
 const dataJson = dates;
 
@@ -26,6 +27,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+          <Image style={{position: 'absolute', left: 150, top: 150}} src={Couv.src} priority={true} unoptimized={true} width={271} height={403} />
         <div className={styles.center}>
           <DatePicker
             selected={startDate}
